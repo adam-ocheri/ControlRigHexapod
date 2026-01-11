@@ -14,4 +14,11 @@ class CONTROLRIGHEXAPOD_API USocketCommunication : public UObject
 {
 	GENERATED_BODY()
 	
+public:
+
+	static USocketCommunication* CreateNewSocketCommunication(UObject* OwningAnimInstance);
+
+	FVector IncomingVelocity;
+
+	FRotator IncomingRotation;
 };
